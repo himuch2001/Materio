@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>InternAssignment</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <link rel="stylesheet" type="text/css" href="newstyles.css">
+  <link rel="capture.JPG" type="image">
+  <bgcolor="blue">
+  <table  width="80%" cellspacing="5px" align="right">
+    <tr>
+      <td rowspan="2" valign="top" width="60%">
+        <img src="capture.JPG" height="200px" >
+
+        <h1 style="color: blue;" >Materio</h1>
+                                <big><b>Contact Us</b></big>
+        <p><b>Looking for a design partner?</b></p>
+                                <p><b>You found</b></p>
+
+      </td>
+      <td class="block"><h2>Register here</h2></td>
+      <td><h2>Login</h2></td>
+    </tr>
+        <%= yield %>
+  </body>
+</html>

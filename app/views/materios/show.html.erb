@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Your name:</strong>
+  <%= @materio.your_name %>
+</p>
+
+<p>
+  <strong>Your email:</strong>
+  <%= @materio.your_email %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @materio.Company %>
+</p>
+
+<p>
+  <strong>Apr budget:</strong>
+  <%= @materio.apr_budget %>
+</p>
+
+<p>
+  <strong>Optional:</strong>
+  <%= @materio.optional %>
+</p>
+
+<p>
+  <strong>Drop box:</strong>
+  <%= @materio.drop_box %>
+</p>
+
+
+<%= link_to 'Edit', edit_materio_path(@materio) %> |
+<%= link_to 'Back', materios_path %>

@@ -1,0 +1,48 @@
+<%= form_with(model: materio) do |form| %>
+  <% if materio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(materio.errors.count, "error") %> prohibited this materio from being saved:</h2>
+
+      <ul>
+        <% materio.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :your_name %>
+    <%= form.text_field :your_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :your_email %>
+    <%= form.text_field :your_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Company %>
+    <%= form.text_field :Company %>
+  </div>
+
+  <div class="field">
+    <%= form.label :apr_budget %>
+    <%= form.text_field :apr_budget %>
+  </div>
+
+  <div class="field">
+    <%= form.label :optional %>
+    <%= form.text_area :optional %>
+  </div>
+
+   <div class="field">
+    <%= form.label :drop_box %>
+    <%= form.file_field :drop_box %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

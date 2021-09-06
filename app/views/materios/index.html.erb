@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Your name</th>
+      <th>Your email</th>
+      <th>Company</th>
+      <th>Apr budget</th>
+      <th>Optional</th>
+      <th>Drop box</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @materios.each do |materio| %>
+      <tr>
+        <td><%= materio.your_name %></td>
+        <td><%= materio.your_email %></td>
+        <td><%= materio.Company %></td>
+        <td><%= materio.apr_budget %></td>
+        <td><%= materio.optional %></td>
+        <td><%= materio.drop_box %></td>
+        <td><%= link_to 'Show', materio %></td>
+        <td><%= link_to 'Edit', edit_materio_path(materio) %></td>
+        <td><%= link_to 'Destroy', materio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Materio', new_materio_path %>
